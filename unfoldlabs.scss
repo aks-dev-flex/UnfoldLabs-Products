@@ -97,26 +97,14 @@
     }
     .border{
         border-bottom: 1px solid #E3E1E1;
-        margin-bottom: 140px;
-        margin-top: 167px;
-     
-    }
-    .primary-btn{
-        margin-top: 44px;
-        display: flex;
-        justify-content: space-between;
-        gap: 14px;
-        white-space: nowrap;
-        .btn{
-            background: #5C5C5C80;
-            padding: 30px 24px;
-            box-shadow: 0px 6px 24px rgba(36, 25, 84, 0.1);
-            border-radius: 20px;
-            font-size: 20px;
-            font-weight: 500;
-            color:   var(--btn-color);
+      
+        width: 784px;
+        margin: 167px auto 140px;
+        &.border-footer{
+            width: 100%;
         }
     }
+    
     .section-content{
         color: var(--primary-color);
       
@@ -124,66 +112,170 @@
             display: flex;
             flex-direction: column;
             .products-section{
-                .browser-content{
-                    margin-top: 44px;
-                    display: flex;
-                    .sect-img{
-                        &.browser{
-                            margin-right: -43%;
-                            margin-left: -24px;
-                        }
-                    }
-                }
+                display: flex;
+                flex-direction: row;
                
-                   
                     .img{
                         flex: 1;
                     }
-                    &.kapture-img{
-                        background: url(images/kapture-product.png) no-repeat;
-                        background-position: 200px;
+                    &.product-img{
+                        background: url(images/product-img.png) no-repeat;
+                        background-position: 114px;
+                        .kapture-img{
+                            background: url(images/kapture-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                           
+                        }
+                        .ufallAlert-img{
+                            background: url(images/ufallAlert-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                        .distanceD-img{
+                            background: url(images/DistanceD-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                        .myfamily-img{
+                            background: url(images/myFamily-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+
+                        }
+                        .appLock-img{
+                            background: url(images/appLock-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                        .redGreen-img{
+                            background: url(images/redGreen-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                        .getSmart-img{
+                            background: url(images/getSmart-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                        .unfoldPrints-img{
+                            background: url(images/unfoldPrints-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 27%;
+                            margin-left: 22%;
+                        }
+                       
+                        
                     }
-                    &.reqorder-img{
-                        background: url(images/reqorder-product.png) no-repeat;
-                        background-position: 860px;  
+                    &.product-right-img{
+                        background: url(images/product-img.png) no-repeat;
+                        background-position: 85%;
+                        .reqorder-img{
+                            background: url(images/reqorder-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .kapture-right-img{
+                            background: url(images/kapture-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .ufoldQuotes-img{
+                            background: url(images/unfoldQuotes-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .mysecureMe-img{
+                            background: url(images/mySecureme-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .secureMe-img{
+                            background: url(images/secureMe-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .wallet-img{
+                            background: url(images/wallet-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .droidTransact-img{
+                            background: url(images/droidTransact-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
+                        .mobileSwitch-img{
+                            background: url(images/mobileSwitch-product.png) no-repeat;
+                            background-position: left center;
+                            height: 200px;
+                            background-size: contain;
+                            display: flex;
+                            flex: 0 0 36%;
+                        }
                     }
-                    &.uFallAlert-img{
-                        background: url(images/ufallAlert-product.png) no-repeat;
-                        background-position: 200px;  
-                    }
-                    &.unfoldquotes-img{
-                        background: url(images/unfoldQuotes-product.png) no-repeat;
-                        background-position: 860px; 
-                    }
-                    &.distanceD-img{
-                        background: url(images/DistanceD-product.png) no-repeat;
-                        background-position: 200px;  
-                    }
-                    &.mySecureme-img{
-                        background: url(images/mySecureme-product.png) no-repeat;
-                        background-position: 860px; 
-                    }
-                    &.myFamily-img{
-                        background: url(images/myFamily-product.png) no-repeat;
-                        background-position: 200px;  
-                    }
-                    &.secure-img{
-                        background: url(images/secureMe-product.png) no-repeat;
-                        background-position: 860px;
-                    }
-                    &.Applock-img{
-                        background: url(images/secureMe-product.png) no-repeat;
-                        background-position: 200px;
-                    }
-                
+                    
                 &.vector-img{
                     background: url(images/group-vector2.png)no-repeat;
                     background-size: contain;
                 }
                 
                 .sect-content{
-                    float: right;
-                    margin-left: 45%;
+                    // float: right;
+                    // margin-left: 45%;
+                    flex: 1;
                     &.left-sect{
                         float: left;
                         margin-left: 24%;
@@ -215,6 +307,13 @@
                         color:var(--secondary-color);
                         line-height: 32px;
                         font-weight: 400;
+                        .list-content{
+                            // list-style: none;
+                            // width: 12px;
+                            // height: 12px;
+                            // border-radius: 20px;
+                            // background-color: #93D2E5;
+                        }
 
                     }
                 }
@@ -222,11 +321,35 @@
                 
                 }
             }
+            .buttons{
+                display: flex;
+                gap: 20px;
+            }
+            .primary-btn{
+                border: 2px solid #80b7c8;
+                display: flex;
+                flex-direction: row;
+                border-radius: 20px;
+                gap: 10px;
+                width: 162px;
+                padding: 12px 16px;
+                align-items: center;
+                margin: 2% 24%;
+                cursor: pointer;
+                &.browser-btn{
+                    margin: 20px 0 -20px 0;
+                }
+                &.right-btn{
+                    margin: -22px 0 0 65%;
+                }
+
+
+            }
            
 
         }
     }
- 
+  
     .footer-section{
         color:var(--secondary-color);
         display: flex;
