@@ -65,11 +65,15 @@
             <!-- =======  Section Content ======= -->
             <section class="section-content">
                 <div class="vector-img">
+                    <picture>
+                        <source srcset="dark-mode.png" media="(prefers-color-scheme: light)">
+                        <!-- <img src="light-image.png"> -->
+                      </picture>
                 <div class="sect-row">
                     <!-- ======= First Product Section  ======= -->
 
                     <div class="products-section product-img">
-                        <div class="kapture-img">
+                        <div class="kapture-img"> 
                             
                         </div>
                        
@@ -777,15 +781,16 @@
                        
                        
                     </div>
-                    <div class="primary-btn">
+                    <a class="primary-btn">
                         <div class="btn-img">
                             <img src="images/plus-icon.svg" alt="default">
                         </div>
-                       
+                        <p><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                         <div class="btn-label">
                             See More
+
                         </div>
-                    </div>
+                    </a>
                    
                     
                 </div>
@@ -851,6 +856,7 @@
 
                 }
             }
+           
             
    
 

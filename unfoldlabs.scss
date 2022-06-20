@@ -30,6 +30,8 @@
     margin: 0 auto;
 
 }
+#more {display: none;}
+
 
 .main-cnr{
     width: 100%;
@@ -393,4 +395,9 @@
         }
     }
 
+}
+@media (prefers-color-scheme : light){
+    .vector-img{
+       background: url(images/appLock-product.png) no-repeat;
+    }
 }

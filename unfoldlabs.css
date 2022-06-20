@@ -27,6 +27,10 @@
   margin: 0 auto;
 }
 
+#more {
+  display: none;
+}
+
 .main-cnr {
   width: 100%;
   background: var(--bg-color);
@@ -518,5 +522,11 @@
 
 .main-cnr .footer-section .footer-content {
   margin-top: 22px;
+}
+
+@media (prefers-color-scheme: light) {
+  .vector-img {
+    background: url(images/appLock-product.png) no-repeat;
+  }
 }
 /*# sourceMappingURL=unfoldlabs.css.map */
