@@ -65,15 +65,11 @@
             <!-- =======  Section Content ======= -->
             <section class="section-content">
                 <div class="vector-img">
-                    <picture>
-                        <source srcset="dark-mode.png" media="(prefers-color-scheme: light)">
-                        <!-- <img src="light-image.png"> -->
-                      </picture>
                 <div class="sect-row">
                     <!-- ======= First Product Section  ======= -->
 
                     <div class="products-section product-img">
-                        <div class="kapture-img"> 
+                        <div class="kapture-img">
                             
                         </div>
                        
@@ -82,7 +78,8 @@
                                 <label for="" class="title">Kapture </label>
                                 <p class="paragraph">Kapture is an innovative knowledge 
                                 management tool that allows people to 
-                                share, access, and update business 
+                                share, acc
+                                ess, and update business 
                                 knowledge and information. </p>
                                 <ul class="list-item">
                                     <li class="list-content">Knowledge Management Platform – API Driven </li>
@@ -104,9 +101,17 @@
                             <img src="images/plus-icon.svg" alt="default">
                         </div>
                         <div class="btn-label">
-                            See More
+                            <!-- See More -->
+                            <button href="" onclick="myFunction()" id="myBtn" class="btn-label">See More</button>
                         </div>
                     </div>
+                    <div #="readmore-cnr"><span id="dots"></span><span id="more">erisque enim ligula venenatis dolor. 
+                        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus 
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum 
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                        Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros 
+                        non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></div>
+                    
                     <div class="border"></div>
 
                     <!-- ======= second Product Section  ======= -->
@@ -781,17 +786,24 @@
                        
                        
                     </div>
-                    <a class="primary-btn">
+                    <div class="primary-btn">
                         <div class="btn-img">
-                            <img src="images/plus-icon.svg" alt="default">
+                           <img src="images/plus-icon.svg" alt="default">
                         </div>
-                        <p><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                       
                         <div class="btn-label">
-                            See More
+                            <!-- See More -->
 
+                           
+                            <button href="" onclick="myFunction()" id="myBtn" class="btn-label">See More</button>
                         </div>
-                    </a>
-                   
+                    </div>
+                    <div #="readmore-cnr"><span id="dots"></span><span id="more">erisque enim ligula venenatis dolor. 
+                        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus 
+                        vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum 
+                        dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                        Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros 
+                        non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></div>
                     
                 </div>
                
@@ -856,8 +868,21 @@
 
                 }
             }
-           
-            
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "See more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "See less"; 
+                    moreText.style.display = "block";
+                }
+}
    
 
 
